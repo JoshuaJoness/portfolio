@@ -1,0 +1,16 @@
+body {
+	background-color: #A8D0E6;
+}
+
+.introContainer {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+.name{
+	text-align: center;
+}
+.projectsContainer {
+	background-color: #F8E9E1;
+	height: 500px;
+	margin-bottom: 500px;
+}
