@@ -99,7 +99,7 @@ class Home extends React.Component {
 					<b className="underline">Backend: </b> <b style={styles.tech}> Node, Express</b>
 					<br></br>
 					<br></br>
-					<a href="https://calorie-calc-desktop.herokuapp.com/">Link</a>
+					<a href="http://airbnbclone.tech/">Link</a>
 					<br></br>
 					<div className="codeContainer">
 					<a href="">Code
@@ -107,7 +107,7 @@ class Home extends React.Component {
 					</a>
 					</div>
 					</p>
-					<a href='https://calorie-calc-desktop.herokuapp.com/' target='_blank'>
+					<a href='http://caloriecounter.tech/' target='_blank'>
 						<img src="./calorie-calculator.png" className="projectImages"></img>
 					</a>
 				</div>
