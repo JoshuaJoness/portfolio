@@ -1,5 +1,6 @@
 body {
-	background-color: #A8D0E6;
+	background-color: #F6E8EA;
+	font-family: 'Saira Condensed', sans-serif;
 }
 
 .introContainer {
@@ -9,8 +10,67 @@ body {
 .name{
 	text-align: center;
 }
-.projectsContainer {
-	background-color: #F8E9E1;
-	height: 500px;
+.projectsIntro {
+	background-color: #312F2F;
+	height: 100%;
 	margin-bottom: 500px;
+
+}
+
+.airbnbContainer {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 10%;
+	padding-top: 0px;
+}
+
+.calorieContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-left: 2%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+
+.projectDescription {
+	color: #F6E8EA;
+	width: 100%;
+	font-size: 30px;
+	font-weight: medium;
+}
+
+.projectImages {
+	width: 50vw;
+	border-radius: 15px;
+}
+
+a {
+	color: #84DCCF;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+.codeContainer {
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+
+.bold{
+	margin-left: 10%;
+	margin-bottom: 5%;
+	font-size: 30px;
+}
+
+.projectbox {
+	background-color: #312F2F;
+	padding-bottom: 20%;
+}
+
+.middlebox{
+	display: grid;
+	grid-template-rows: 80% 20%;
 }

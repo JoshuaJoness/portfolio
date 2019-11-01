@@ -1,4 +1,9 @@
 .nav {
-	background-color: #F76C6C;
-	height: 100px;
+	background-color: #EF626C;
+	opacity: 0.5;
+	height: 25%;
+}
+
+.hover {
+	color: white;
 }

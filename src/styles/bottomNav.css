@@ -1,0 +1,5 @@
+.bottomNav {
+	background-color: #22181C;
+	display: grid;
+	grid-template-columns: 5% 30% auto;
+}
