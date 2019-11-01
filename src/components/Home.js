@@ -83,7 +83,7 @@ class Home extends React.Component {
 					<a href="https://airbnb-joshua.herokuapp.com"> Link</a>
 					<br></br>
 					<div className="codeContainer">
-					<a href="">Code
+					<a href="https://github.com/JoshuaJoness">Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
 					</div>
@@ -102,7 +102,7 @@ class Home extends React.Component {
 					<a href="http://airbnbclone.tech/">Link</a>
 					<br></br>
 					<div className="codeContainer">
-					<a href="">Code
+					<a href="https://github.com/JoshuaJoness">Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
 					</div>
