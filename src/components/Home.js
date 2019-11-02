@@ -68,7 +68,7 @@ class Home extends React.Component {
 
 
 				<div className='airbnbContainer'>
-					<a href='https://airbnb-joshua.herokuapp.com/' target='_blank'>
+					<a href='https://airbnbclone.tech/' target='_blank'>
 						<img src="./airbnb2.png" className="projectImages"></img>
 					</a>
 					<p className='projectDescription'>This is an Airbnb clone. Users can sign-up/log-in, book a place, and host their own places.
@@ -80,7 +80,7 @@ class Home extends React.Component {
 					<b className="underline">Backend: </b> <b style={styles.tech}>Node, Express, MongoDB</b>
 					<br></br>
 					<br></br>
-					<a href="https://airbnb-joshua.herokuapp.com"> Link</a>
+					<a href="https://airbnbclone.tech"> Link</a>
 					<br></br>
 					<div className="codeContainer">
 					<a href="https://github.com/JoshuaJoness">Code
@@ -99,7 +99,7 @@ class Home extends React.Component {
 					<b className="underline">Backend: </b> <b style={styles.tech}> Node, Express</b>
 					<br></br>
 					<br></br>
-					<a href="http://airbnbclone.tech/">Link</a>
+					<a href="http://caloriecounter.tech/">Link</a>
 					<br></br>
 					<div className="codeContainer">
 					<a href="https://github.com/JoshuaJoness">Code
