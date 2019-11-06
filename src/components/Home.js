@@ -64,7 +64,7 @@ class Home extends React.Component {
 
 
 				<h1 style={styles.projectLabel}>Below you can find some of my projects</h1>
-				<img style={styles.codeImage} src='./blueImage.svg'></img>
+
 
 
 				<div className='airbnbContainer'>
@@ -83,10 +83,13 @@ class Home extends React.Component {
 					<a href="https://airbnbclone.tech"> Link</a>
 					<br></br>
 					<div className="codeContainer">
-					<a href="https://github.com/JoshuaJoness">Code
+					<a href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>Front End Code
+						<i class="fas fa-code fa-spin" style={styles.icons}></i>
+					</a>		
+					</div>
+					<a href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>Back End Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
-					</div>
 					</p>
 				</div>
 				<div className='calorieContainer'>
@@ -102,10 +105,13 @@ class Home extends React.Component {
 					<a href="http://caloriecounter.tech/">Link</a>
 					<br></br>
 					<div className="codeContainer">
-					<a href="https://github.com/JoshuaJoness">Code
+					<a href="https://github.com/JoshuaJoness/calories-desktop">Front End Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
 					</div>
+					<a href="https://github.com/JoshuaJoness/calories-api">Back End Code
+						<i class="fas fa-code fa-spin" style={styles.icons}></i>
+					</a>
 					</p>
 					<a href='http://caloriecounter.tech/' target='_blank'>
 						<img src="./calorie-calculator.png" className="projectImages"></img>

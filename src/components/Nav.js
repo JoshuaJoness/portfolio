@@ -19,8 +19,8 @@ class Nav extends React.Component {
 				<nav className='nav'>
 					<a href="https://github.com/joshuajoness" target="_blank">
 						<i class="fab fa-github" style={styles.github}></i>
+					<div style={styles.name}>JoshuaJones.io</div>
 					</a>
-					<div style={styles.name}>JoshuaJones.tech</div>
 				</nav>
 			</>
 		)
