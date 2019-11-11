@@ -2,7 +2,10 @@
 	background-color: #EF626C;
 	opacity: 0.5;
 	height: 25%;
+	display: grid;
+	grid-template-columns: 80% 10% 10%;
 }
+
 
 .hover {
 	color: white;

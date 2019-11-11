@@ -41,6 +41,21 @@ class Home extends React.Component {
 			tech: {
 				color: '#EF626C',
 				marginLeft: '2%'
+			},
+			contact:{
+				paddingBottom: '5%'
+			},
+			contactTitle:{
+				backgroundColor: '#F6E8EA',
+				marginBottom: '7%'
+			},
+			contactTitle:{
+				fontSize: '50px',
+				paddingTop: '5%'
+			},
+			contactText:{
+				fontSize: '30px',
+				margin: '2%'
 			}
 		}
 		return(
@@ -53,6 +68,7 @@ class Home extends React.Component {
 					<div>
 						<h1 style={styles.h1} className='name'>Greetings, </h1>
 						<p style={styles.p}>I'm Joshua, a passionate web developer. Welcome to my portfolio.</p>
+						<img className='avatar' src="./avatar1.png"></img>
 					</div>
 					<div>
 						<img style={styles.image} src="./blueLogo.svg"></img>
@@ -80,7 +96,7 @@ class Home extends React.Component {
 					<b className="underline">Backend: </b> <b style={styles.tech}>Node, Express, MongoDB</b>
 					<br></br>
 					<br></br>
-					<a href="https://airbnb-joshua.herokuapp.com/"> Link</a>
+					<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'> Link</a>
 					<br></br>
 					<div className="codeContainer">
 					<a href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>Front End Code
@@ -102,14 +118,14 @@ class Home extends React.Component {
 					<b className="underline">Backend: </b> <b style={styles.tech}> Node, Express</b>
 					<br></br>
 					<br></br>
-					<a href="http://caloriecounter.tech/">Link</a>
+					<a href="http://caloriecounter.tech/" target='_blank'>Link</a>
 					<br></br>
 					<div className="codeContainer">
-					<a href="https://github.com/JoshuaJoness/calories-desktop">Front End Code
+					<a href="https://github.com/JoshuaJoness/calories-desktop" target='_blank'>Front End Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
 					</div>
-					<a href="https://github.com/JoshuaJoness/calories-api">Back End Code
+					<a href="https://github.com/JoshuaJoness/calories-api" target='_blank'>Back End Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
 					</a>
 					</p>
@@ -118,6 +134,13 @@ class Home extends React.Component {
 					</a>
 				</div>
 
+				</div>
+				<div style={styles.contact}>
+					<center style={styles.contactTitle}>Contact</center>
+					<center style={styles.contactText}><b>E-mail: </b>joshuajonesdev@gmail.com</center>
+					<center style={styles.contactText}><b>Tel: </b>647-893-5547</center>
+					<center style={styles.contactText}><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a></center>
+					<center style={styles.contactText}><b>GitHub: </b><a href="https://github.com/joshuajoness"><i class="fab fa-github-square"></i></a></center>
 				</div>
 				<BottomNav/>
 			</>

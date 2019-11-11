@@ -67,10 +67,15 @@ a:hover {
 
 .projectbox {
 	background-color: #312F2F;
-	padding-bottom: 20%;
+	padding-bottom: 5%;
 }
 
 .middlebox{
 	display: grid;
 	grid-template-rows: 80% 20%;
+}
+
+.avatar{
+	height: 300px;
+	margin-left: 22%;
 }

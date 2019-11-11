@@ -6,11 +6,12 @@ class BottomNav extends React.Component {
 		const styles = {
 			github: {
 				fontSize: '60px',
-				marginLeft: '1.75%',
+				marginLeft: '5%',
 				marginTop: '2%',
 				marginBottom: '1%',
-				color: '#312F2F',
-				paddingTop: '1%'
+				color: '#84DCCF',
+				paddingTop: '1%',
+				height: '10px'
 			},
 			text: {
 				fontSize: '60px',
@@ -26,7 +27,9 @@ class BottomNav extends React.Component {
 					<a href="https://github.com/joshuajoness" target="_blank">
 						<i class="fab fa-github" style={styles.github}></i>
 					</a>
-					<div style={styles.text}>Check out my GitHub</div>
+					<a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/" target="_blank">
+						<i class="fab fa-linkedin-in" style={styles.github}></i>
+					</a>
 				</nav>
 			</>
 		)
