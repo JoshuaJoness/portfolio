@@ -130,7 +130,7 @@ class Home extends React.Component {
 					</a>
 					</p>
 					<a href='http://caloriecounter.tech/' target='_blank'>
-						<img src="./strength.png" className="projectImages"></img>
+						<img src="./spirit.png" className="projectImages"></img>
 					</a>
 				</div>
 
