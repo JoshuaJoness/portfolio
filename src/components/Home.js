@@ -109,7 +109,7 @@ class Home extends React.Component {
 					</p>
 				</div>
 				<div className='calorieContainer'>
-					<p className='projectDescription'>This is a calorie calculator application
+					<p className='projectDescription'>This layout demonstrates some of what I can achieve with React. It is a calorie calculator application.<br/><br/>Node.js is also used to receive a request from the client, process that request, and respond with data for the client.
 					<br></br>
 					<br></br>
 					<b className="underline">Frontend: </b> <b style={styles.tech}> React, Axios, HTML, CSS</b>
