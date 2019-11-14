@@ -60,7 +60,6 @@ class Home extends React.Component {
 		}
 		return(
 			<>
-				<Nav/>
 				<div style={styles.introContainer}>
 					<div>
 						<img style={styles.image} src="./SG-Speckle-Texture-6.png"></img>
