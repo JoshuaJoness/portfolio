@@ -109,7 +109,7 @@ class Home extends React.Component {
 					</p>
 				</div>
 				<div className='calorieContainer'>
-					<p className='projectDescription'>This is a calorie calculator. Simply answer a few questions to get your caloric results.
+					<p className='projectDescription'>This is a calorie calculator application
 					<br></br>
 					<br></br>
 					<b className="underline">Frontend: </b> <b style={styles.tech}> React, Axios, HTML, CSS</b>
@@ -130,7 +130,7 @@ class Home extends React.Component {
 					</a>
 					</p>
 					<a href='http://caloriecounter.tech/' target='_blank'>
-						<img src="./calorie-calculator.png" className="projectImages"></img>
+						<img src="./strength.png" className="projectImages"></img>
 					</a>
 				</div>
 
