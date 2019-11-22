@@ -41,7 +41,7 @@ class Home extends React.Component {
 				paddingTop: '5%'
 			},
 			tech: {
-				color: '#EF626C',
+				color: '#65C9FF',
 				marginLeft: '2%'
 			},
 			contact:{
@@ -53,11 +53,13 @@ class Home extends React.Component {
 			},
 			contactTitle:{
 				fontSize: '50px',
-				paddingTop: '5%'
+				paddingTop: '5%',
+				color: 'white'
 			},
 			contactText:{
 				fontSize: '30px',
-				margin: '2%'
+				margin: '2%',
+				color: 'white'
 			},
 			particles:{
             position: "absolute",
