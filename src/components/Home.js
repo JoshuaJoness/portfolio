@@ -178,7 +178,7 @@ class Home extends React.Component {
 				<div style={styles.contact}>
 					<center style={styles.contactTitle}>Contact</center>
 					<center style={styles.contactText}><b>E-mail: </b>joshuajonesdev@gmail.com</center>
-					<center style={styles.contactText}><b>Tel: </b>647-893-5547</center>
+					<center style={styles.contactText}><b>Tel: </b>+1(647)-893-5547</center>
 					<center style={styles.contactText}><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a></center>
 					<center style={styles.contactText}><b>GitHub: </b><a href="https://github.com/joshuajoness"><i class="fab fa-github-square"></i></a></center>
 				</div>
