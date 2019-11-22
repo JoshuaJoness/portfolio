@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/home.css'
 import Nav from './Nav'
 import BottomNav from './BottomNav'
+import Particles from 'react-particles-js';
 
 class Home extends React.Component {
 	render(){
@@ -15,13 +16,14 @@ class Home extends React.Component {
 			},
 
 			h1: {
-				color: '#312F2F',
+				color: 'white',
 				fontSize: '70px'
 			},
 			p: {
-				color: '#312F2F',
+				color: 'white',
 				fontSize: '50px',
-				paddingLeft: '5%'
+				paddingLeft: '5%',
+				textAlign: 'center'
 			},
 			codeImage: {
 				height: '1o0%',
@@ -56,69 +58,106 @@ class Home extends React.Component {
 			contactText:{
 				fontSize: '30px',
 				margin: '2%'
+			},
+			particles:{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%"
 			}
 		}
 		return(
 			<>
-				<div style={styles.introContainer}>
-					<div>
-						<img style={styles.image} src="./SG-Speckle-Texture-6.png"></img>
+				<div>
+					<center>
+						<h1 style={styles.h1} className='name'>Welcome to my portfolio.</h1>
+					</center>
+					<div className='welcomeContainer'>
+						<div></div>
+						<p style={styles.p}>I'm Joshua, a passionate web developer, currently in love with 	React!</p>
+						<div></div>
 					</div>
-					<div>
-						<h1 style={styles.h1} className='name'>Greetings, </h1>
-						<p style={styles.p}>I'm Joshua, a passionate web developer. Welcome to my portfolio.</p>
-						<img className='avatar' src="./avatar1.png"></img>
-					</div>
-					<div>
-						<img style={styles.image} src="./blueLogo.svg"></img>
-					</div>
+					<center><img className='avatar' src="./avatar1.png"></img></center>
+					<Particles style={styles.particles} params={{
+ 	    			"particles": {
+ 	        			"number": {
+ 	            			"value": 160,
+ 	            			"density": {
+ 	                			"enable": false
+ 	            			}
+ 	        			},
+ 	        			"size": {
+ 	            			"value": 3,
+ 	            			"random": true,
+ 	            			"anim": {
+ 	                			"speed": 4,
+ 	                			"size_min": 0.3
+ 	            			}
+ 	        			},
+ 	        			"line_linked": {
+ 	            			"enable": false
+ 	        			},
+ 	        			"move": {
+ 	            			"random": true,
+ 	            			"speed": 1,
+ 	            			"direction": "top",
+ 	            			"out_mode": "out"
+ 	        			}
+ 	    								},
+ 	    					"interactivity": {
+ 	        					"events": {
+ 	            					"onhover": {
+ 	                					"enable": true,
+ 	                					"mode": "bubble"
+ 	            					},
+ 	            					"onclick": {
+ 	                					"enable": true,
+ 	                					"mode": "repulse"
+ 	            					}
+ 	        					},
+ 	        					"modes": {
+ 	            					"bubble": {
+ 	                					"distance": 250,
+ 	                					"duration": 2,
+ 	                					"size": 0,
+ 	                					"opacity": 0
+ 	            					},
+ 	            					"repulse": {
+ 	                					"distance": 400,
+ 	                					"duration": 4
+ 	            					}
+ 	        					}
+ 	    					}
+ 						}}  />
 				</div>
-
-
 				<div className="projectbox">
-
-
-				<h1 style={styles.projectLabel}>Below you can find some of my projects</h1>
-
-
-
-				<div className='airbnbContainer'>
-					<a href='https://airbnb-joshua.herokuapp.com/' target='_blank'>
-						<img src="./airbnb2.png" className="projectImages"></img>
-					</a>
-					<p className='projectDescription'>This is an Airbnb clone. Users can sign-up/log-in, book a place, and host their own places.
-					<br></br>
-					<br></br>
-					<b className="underline">Frontend: </b> <b style={styles.tech}>React, Axios, JSONwebtoken, B-Crypt, HTML, CSS</b>
-					<br></br>
-					<br></br>
-					<b className="underline">Backend: </b> <b style={styles.tech}>Node, Express, MongoDB</b>
-					<br></br>
-					<br></br>
-					<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'> Link</a>
-					<br></br>
-					<div className="codeContainer">
-					<a href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>Front End Code
-						<i class="fas fa-code fa-spin" style={styles.icons}></i>
-					</a>
+					<h1 style={styles.projectLabel}>Below you can find some of my projects</h1>
+					<div className='airbnbContainer'>
+						<a href='https://airbnb-joshua.herokuapp.com/' target='_blank'>
+							<img src="./airbnb2.png" className="projectImages"></img>
+						</a>
+						<p className='projectDescription'>This is an Airbnb clone. Users can sign-up/log-in, book a place, and host their own places.<br></br><br></br>
+						<b className="underline">Frontend: </b> <b style={styles.tech}>React, Axios, JSONwebtoken, B-Crypt, HTML, CSS</b><br></br><br></br>
+						<b className="underline">Backend: </b> <b style={styles.tech}>Node, Express, MongoDB</b><br></br>
+						<br></br>
+						<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'> Link</a><br></br>
+						<div className="codeContainer">
+							<a href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>Front End Code
+								<i class="fas fa-code fa-spin" style={styles.icons}></i>
+							</a>
+						</div>
+						<a href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>Back End Code
+							<i class="fas fa-code fa-spin" style={styles.icons}></i>
+						</a>
+						</p>
 					</div>
-					<a href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>Back End Code
-						<i class="fas fa-code fa-spin" style={styles.icons}></i>
-					</a>
-					</p>
-				</div>
 				<div className='calorieContainer'>
-					<p className='projectDescription'>This layout demonstrates some of what I can achieve with React. It is a calorie calculator application.<br/><br/>Node.js is also used to receive a request from the client, process that request, and respond with data for the client.
+					<p className='projectDescription'>This layout demonstrates some of what I can achieve with React. It is a calorie calculator application.<br/><br/>Node.js is also used to receive a request from the client, process that request, and respond with data for the client.<br></br><br></br>
+					<b className="underline">Frontend: </b> <b style={styles.tech}> React, Axios, HTML, CSS</b><br></br>
 					<br></br>
-					<br></br>
-					<b className="underline">Frontend: </b> <b style={styles.tech}> React, Axios, HTML, CSS</b>
-					<br></br>
-					<br></br>
-					<b className="underline">Backend: </b> <b style={styles.tech}> Node, Express</b>
-					<br></br>
-					<br></br>
-					<a href="http://caloriecounter.tech/" target='_blank'>Link</a>
-					<br></br>
+					<b className="underline">Backend: </b> <b style={styles.tech}> Node, Express</b><br></br><br></br>
+					<a href="http://caloriecounter.tech/" target='_blank'>Link</a><br></br>
 					<div className="codeContainer">
 					<a href="https://github.com/JoshuaJoness/calories-desktop" target='_blank'>Front End Code
 						<i class="fas fa-code fa-spin" style={styles.icons}></i>
