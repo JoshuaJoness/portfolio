@@ -75,12 +75,12 @@ class Home extends React.Component {
 					<center>
 						<h1 style={styles.h1} className='name'>Welcome to my portfolio.</h1>
 					</center>
+					<center><img className='avatar' src="./avatar1.png"></img></center>
 					<div className='welcomeContainer'>
 						<div></div>
 						<p style={styles.p}>I'm Joshua, a passionate web developer, currently in love with 	React!</p>
 						<div></div>
-					</div>
-					<center><img className='avatar' src="./avatar1.png"></img></center>
+					</div>		
 					<Particles style={styles.particles} params={{
  	    			"particles": {
  	        			"number": {
