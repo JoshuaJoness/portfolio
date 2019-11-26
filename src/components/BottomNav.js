@@ -24,12 +24,7 @@ class BottomNav extends React.Component {
 		return(
 			<>
 				<nav className='bottomNav'>
-					<a href="https://github.com/joshuajoness" target="_blank">
-						<i class="fab fa-github" style={styles.github}></i>
-					</a>
-					<a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/" target="_blank">
-						<i class="fab fa-linkedin-in" style={styles.github}></i>
-					</a>
+		
 				</nav>
 			</>
 		)
