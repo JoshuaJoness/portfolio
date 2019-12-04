@@ -30,6 +30,63 @@ class Projects extends React.Component {
 		return(
 			<div className='project-thumbnail-container'>
 
+			<div className='intro-container'>
+			<center>
+				<p>I'm Joshua <img className='avatar' src="./avatar2.png"></img></p>
+				<p className='name'>Welcome to my portfolio.</p>
+			</center>
+			<Particles style={styles.particles} params={{
+				"particles": {
+						"number": {
+								"value": 160,
+								"density": {
+										"enable": false
+								}
+						},
+						"size": {
+								"value": 3,
+								"random": true,
+								"anim": {
+										"speed": 4,
+										"size_min": 0.3
+								}
+						},
+						"line_linked": {
+								"enable": false
+						},
+						"move": {
+								"random": true,
+								"speed": 1,
+								"direction": "top",
+								"out_mode": "out"
+						}
+									},
+						"interactivity": {
+								"events": {
+										"onhover": {
+												"enable": true,
+												"mode": "bubble"
+										},
+										"onclick": {
+												"enable": true,
+												"mode": "repulse"
+										}
+								},
+								"modes": {
+										"bubble": {
+												"distance": 250,
+												"duration": 2,
+												"size": 0,
+												"opacity": 0
+										},
+										"repulse": {
+												"distance": 400,
+												"duration": 4
+										}
+								}
+						}
+				}}  />
+</div>
 
 			<center className='pilotContainer'>
 				<h1 className='title'>

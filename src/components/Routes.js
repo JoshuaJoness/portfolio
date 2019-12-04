@@ -9,9 +9,9 @@ class Routes extends React.Component {
 		return(
 			<BrowserRouter>
 				<Switch>
-					<Route path='/newhome' component={NewHome} />
-					<Route path='/projects' component={Projects} />
-					<Route path='/' component={Home} />
+					// <Route path='/newhome' component={NewHome} />
+					// <Route path='/projects' component={Projects} />
+					<Route path='/' component={Projects} />
 				</Switch>
 			</BrowserRouter>
 		)

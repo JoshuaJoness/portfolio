@@ -34,6 +34,14 @@
 		width: 500px;
 	}
 }
+.intro-container{
+	background-color: #465775;
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
+	font-weight: 100;
+	color: #B2A877;
+	height:80vh;
+}
 .project-thumbnail-container{
 	display: grid;
 	background-color: #B2A877;
