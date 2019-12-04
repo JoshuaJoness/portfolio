@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+	.thumbnail-container{
+		display: grid;
+	}
+	.thumbnail{
+		margin: 10px 20px 10px 20px;
+		height: 25vh;
+		border: 1px #ccc solid;
+		text-align: center;
+		padding-top: 30%;
+	}
+	.griditem1 {
+  background-color: black;
+}
+}
