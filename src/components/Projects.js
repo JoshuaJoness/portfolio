@@ -31,9 +31,16 @@ class Projects extends React.Component {
 			<div className='project-thumbnail-container'>
 
 			<div className='intro-container'>
-			<center>
+			<center className='intro-center'>
 				<p>I'm Joshua <img className='avatar' src="./avatar2.png"></img></p>
 				<p className='name'>Welcome to my portfolio.</p>
+				<div className='social-media'>
+					<div></div>
+					<a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a>
+					<div></div>
+					<a href="https://github.com/joshuajoness"><i class="fab fa-github-square"></i></a>
+					<div></div>
+				</div>
 			</center>
 			<Particles style={styles.particles} params={{
 				"particles": {
@@ -148,8 +155,6 @@ class Projects extends React.Component {
 					<center >Contact</center>
 					<center ><b>E-mail: </b>joshuajonesdev@gmail.com</center>
 					<center ><b>Tel: </b>+1(647)-893-5547</center>
-					<center ><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a></center>
-					<center ><b>GitHub: </b><a href="https://github.com/joshuajoness"><i class="fab fa-github-square"></i></a></center>
 					</div>
 				</div>
 

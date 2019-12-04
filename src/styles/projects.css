@@ -68,6 +68,7 @@
 }
 a{
 	text-decoration: none;
+	color: #CFCCD6;
 }
 a :hover{
 	opacity: 0.8;
@@ -125,4 +126,8 @@ a :hover{
 }
 .contact-info{
 	padding: 10px;
+}
+.social-media{
+	display: grid;
+	grid-template-columns: 35% 10% 10% 10% 35%;
 }
