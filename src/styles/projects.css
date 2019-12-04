@@ -1,0 +1,120 @@
+@media screen and (max-width: 600px) {
+	.project-thumbnail-container{
+		display: grid;
+	}
+	.project-thumbnail{
+		margin: 10px 20px 10px 20px;
+		height: 70vh;
+		border: 1px #ccc solid;
+		text-align: center;
+
+		border-radius: 4px;
+		background-color: white
+	}
+}
+@media screen and (min-width: 992px) {
+	.airbnb-project img{
+		width: 500px;
+	}
+	.caloriecounter-project img{
+		width: 500px;
+	}
+	.pilot-project img{
+		width: 500px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.airbnb-project img{
+		width: 500px;
+	}
+	.caloriecounter-project img{
+		width: 500px;
+	}
+	.pilot-project img{
+		width: 500px;
+	}
+}
+.project-thumbnail-container{
+	display: grid;
+	background-color: #B2A877;
+}
+.project-title{
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
+	font-weight: 100;
+	color: #465775;
+}
+.project-image{
+	width: 90%;
+	border-radius: 6px;
+}
+.project-link{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #465775;
+}
+.project-description{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+a{
+	text-decoration: none;
+}
+a :hover{
+	opacity: 0.8;
+}
+.title{
+	font-family: 'Pacifico', cursive;
+	font-size: 70px;
+	font-weight: 100;
+	color: #465775;
+}
+.airbnb-project{
+	background-color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.caloriecounter-project{
+	background-color: #465775;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.caloriecounter-title{
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
+	font-weight: 100;
+	color: #B2A877;
+}
+.caloriecounter-link{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #B2A877;
+}
+.pilot-project{
+		padding-top: 60px;
+		padding-bottom: 40px;
+}
+.pilottoronto-link{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #465775;
+}
+.contact-container{
+	background-color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 10%;
+}
+.contact-avatar{
+	width: 100px;
+	height: 100px;
+}
+.contact-container a{
+	color: #B2A877;
+}
+.contact-info{
+	padding: 10px;
+}

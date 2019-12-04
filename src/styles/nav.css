@@ -1,12 +1,23 @@
 .nav {
-	background-color: #EF626C;
-	opacity: 0.5;
-	height: 25%;
+	background-color: #465775;
+	opacity: 0.8;
+	height: 100px;
 	display: grid;
-	grid-template-columns: 80% 10% 10%;
+	grid-template-columns: 5% 5% 60% 20% 10%;
+	padding-left: 20px;
+	width: 100%;
+	position: fixed;
 }
-
-
-.hover {
+.avatar{
+	width: 70px;
+	height:70px;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+.email{
 	color: white;
+}
+.icon{
+	width: 70px;
+	height: 70px;
 }
