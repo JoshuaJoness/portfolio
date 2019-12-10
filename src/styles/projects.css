@@ -1,5 +1,5 @@
 body {
-	background-color: #fefefa;
+	background-color: #465775;
 	font-family: 'Saira Condensed', sans-serif;
 }
 
@@ -36,6 +36,12 @@ body {
 	height:100vh;
 	width: 100vw;
 }
+.title{
+	font-size: 50px;
+	font-weight: 300;
+	color: #A38E6F;
+	font-family: 'Pacifico', cursive;
+}
 .second-container{
 	background-color: #fefefa;
 	background-image: url('/backpackOpaque.png');
@@ -49,10 +55,14 @@ body {
 	margin: 20px;
 	width: 345px;
 	opacity: 0.8;
+	border: 2px solid white;
 }
-.project-thumbnail-container{
-	display: grid;
-	background-color: #fefefa;
+.project-container{
+	background-color: #465775;
+}
+.project-card-container{
+	background-color: #465775;
+	padding-top:
 }
 .project-title{
 	font-family: 'Saira Condensed', sans-serif;
@@ -75,17 +85,19 @@ body {
 	margin-right: 10px;
 	padding-bottom: 10px;
 }
-.title{
-	font-size: 50px;
-	font-weight: 300;
-	color: #4F5962;
-}
 .card a{
 	text-decoration: none;
 }
 .contact-container{
 	padding-left: 20px;
-	color: #4F5962;
+	color: #ffffff;
+
+}
+.contact-title{
+	font-size: 35px;
+	font-weight: 300;
+	color: #A38E6F;
+	font-family: 'Pacifico', cursive;
 }
 .contact-container label{
 	padding: 10px;
@@ -94,13 +106,14 @@ body {
 	color: #B2A877;
 }
 .button {
+	font-family: 'Saira Condensed', sans-serif;
 	width: 160px;
-	border:2px solid #ffffff;
+	border:2px solid #000000;
 	font-size:1em;
 	padding:.25em .5em .3125em;
 	color:#ffffff;
 	border-radius:.25em;
-	background:transparent;
+	background:#465775;
 	transition:all .100s;
 }
 .button :hover{

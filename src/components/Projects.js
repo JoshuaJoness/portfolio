@@ -26,7 +26,7 @@ class Projects extends React.Component {
 				<div className='project-container' id='projects'>
 							<center>
 								<h1 className='title'>
-									PROJECTS
+									Projects
 								</h1>
 							</center>
 
@@ -114,7 +114,7 @@ class Projects extends React.Component {
 						<div className='second-container'></div>
 
 						<div className='contact-container' id='contact'>
-							<h1>Contact</h1>
+							<h1 className='contact-title'>Contact</h1>
 							<label><b>E-mail: </b>joshuajonesdev@gmail.com</label>
 							<label><b>Tel: </b>+1(647)-893-5547</label>
 							<label><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a></label>
