@@ -107,7 +107,9 @@ body {
 }
 .button {
 	font-family: 'Saira Condensed', sans-serif;
-	width: 160px;
+	width: 120px;
+	height: 50px;
+	text-align: center;
 	border:2px solid #000000;
 	font-size:1em;
 	padding:.25em .5em .3125em;

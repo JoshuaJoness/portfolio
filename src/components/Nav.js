@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@material-ui/core/Button';
 import '../styles/nav.css'
 
 class Nav extends React.Component {
@@ -9,10 +10,10 @@ class Nav extends React.Component {
 					<div>
 						<a href='#intro'>JOSHUAJONES.IO</a>
 					</div>
+					<a href='#projects'><Button>Projects</Button></a>
+					<a href='#contact'><Button>Contact</Button></a>
 					<br/>
-					<a href='#projects'><button className='button'>Projects</button></a>
-					<br/><br/>
-					<a href='#contact'><button className='button'>Contact</button></a>
+					
 				</nav>
 			</>
 		)
