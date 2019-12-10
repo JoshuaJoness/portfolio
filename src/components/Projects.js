@@ -33,13 +33,14 @@ class Projects extends React.Component {
 							<div className='project-card-container' >
 								<Card className='card'>
 									<CardActionArea>
+										<a className='caloriecounter-link' href="http://caloriecounter.tech/" target='_blank'>
 										<CardMedia
 											component="img"
 											alt="Contemplative Reptile"
 											height="250"
 											image="./caloriecounter1.png"
 											title="Contemplative Reptile"
-										/>
+										/></a>
 										<CardContent>
 											<Typography gutterBottom variant="h5" component="h2">
 											<a className='caloriecounter-link' href="http://caloriecounter.tech/" target='_blank'><h1 className='project-title'>Calorie Counter</h1></a>
@@ -59,13 +60,14 @@ class Projects extends React.Component {
 
 								<Card className='card'>
 									<CardActionArea>
+										<a className='pilottoronto-link' href="http://pilottoronto.ca/" target='_blank'>
 										<CardMedia
 											component="img"
 											alt="Contemplative Reptile"
 											height="250"
 											image="./pilot.png"
 											title="Contemplative Reptile"
-										/>
+										/></a>
 										<CardContent>
 											<Typography gutterBottom variant="h5" component="h2">
 												<a className='pilottoronto-link' href="http://pilottoronto.ca/" target='_blank'><h1 className='project-title'>Pilot Pickup</h1></a>
@@ -85,29 +87,32 @@ class Projects extends React.Component {
 
 								<Card className='card'>
 									<CardActionArea>
+										<a className='pilottoronto-link' href="https://airbnb-joshua.herokuapp.com/" target='_blank'>
 										<CardMedia
 											component="img"
 											alt="Contemplative Reptile"
 											height="250"
 											image="./airbnb4.png"
 											title="Contemplative Reptile"
-										/>
+										/></a>
 										<CardContent>
 											<Typography gutterBottom variant="h5" component="h2">
-											<a className='project-link' href="https://airbnb-joshua.herokuapp.com/" target='_blank'><h1 className='project-title'>Airbnb Clone</h1></a>
+												<a className='pilottoronto-link' href="https://airbnb-joshua.herokuapp.com/" target='_blank'><h1 className='project-title'>Airbnb Clone</h1></a>
 											</Typography>
 											<Typography variant="body2" color="textSecondary" component="p">
-											<p>This is an AirBnb clone that I created during my time at Tortuga Coders. This is a fullstack web application built using React, Node.js, MongoDB, and Express. JSON webtokens, B-Crypt, Axios, Cloudinary and Stripe were also used.</p>
-											<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>
-												<i class="fab fa-github"></i> (Frontend)
-											</a><br/>
-											<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>
-												<i class="fab fa-github"></i> (Backend)
-											</a>
+												<p>This is an AirBnb clone that I created during my time at Tortuga Coders. This is a fullstack web application built using React, Node.js, MongoDB, and Express. JSON webtokens, B-Crypt, Axios, Cloudinary and Stripe were also used.</p>
+												<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>
+													<i class="fab fa-github"></i> (Frontend)
+												</a><br/>
+												<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>
+													<i class="fab fa-github"></i> (Backend)
+												</a>
 											</Typography>
 										</CardContent>
 									</CardActionArea>
 								</Card>
+
+								
 							</div>
 						</div>
 
