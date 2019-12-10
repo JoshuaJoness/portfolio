@@ -1,17 +1,8 @@
-@media screen and (max-width: 600px) {
-	.project-thumbnail-container{
-		display: grid;
-	}
-	.project-thumbnail{
-		margin: 10px 20px 10px 20px;
-		height: 70vh;
-		border: 1px #ccc solid;
-		text-align: center;
-
-		border-radius: 4px;
-		background-color: white
-	}
+body {
+	background-color: #fefefa;
+	font-family: 'Saira Condensed', sans-serif;
 }
+
 @media screen and (min-width: 992px) {
 	.airbnb-project img{
 		width: 500px;
@@ -22,32 +13,49 @@
 	.pilot-project img{
 		width: 500px;
 	}
-}
-@media screen and (min-width: 768px) {
-	.airbnb-project img{
-		width: 500px;
+	.project-card-container{
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		margin-left: 100px;
+		margin-right: 100px;
+		justify-items: center;
+		padding-bottom: 10%;
 	}
-	.caloriecounter-project img{
-		width: 500px;
-	}
-	.pilot-project img{
-		width: 500px;
-	}
+
 }
 .intro-container{
-	background-color: #465775;
+	background-color: #fefefa;
+	background-image: url('/LighthouseOpaque.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 	font-family: 'Pacifico', cursive;
 	font-size: 40px;
 	font-weight: 100;
 	color: #B2A877;
-	height:80vh;
+	height:100vh;
+	width: 100vw;
+}
+.second-container{
+	background-color: #fefefa;
+	background-image: url('/backpackOpaque.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	padding-bottom: 40px;
+}
+.card{
+	margin: 20px;
+	width: 345px;
+	opacity: 0.8;
 }
 .project-thumbnail-container{
 	display: grid;
-	background-color: #B2A877;
+	background-color: #fefefa;
 }
 .project-title{
-	font-family: 'Pacifico', cursive;
+	font-family: 'Saira Condensed', sans-serif;
 	font-size: 40px;
 	font-weight: 100;
 	color: #465775;
@@ -60,77 +68,42 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	color: #465775;
+	padding: 8%;
 }
 .project-description{
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-bottom: 10px;
 }
-a{
-	text-decoration: none;
-	color: #CFCCD6;
-}
-a :hover{
-	opacity: 0.8;
-}
 .title{
-	font-family: 'Pacifico', cursive;
-	font-size: 70px;
-	font-weight: 100;
-	color: #465775;
+	font-size: 50px;
+	font-weight: 300;
+	color: #4F5962;
 }
-.airbnb-project{
-	background-color: #ffffff;
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
-.caloriecounter-project{
-	background-color: #465775;
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
-.caloriecounter-title{
-	font-family: 'Pacifico', cursive;
-	font-size: 40px;
-	font-weight: 100;
-	color: #B2A877;
-}
-.caloriecounter-link{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #B2A877;
-}
-.pilot-project{
-		padding-top: 60px;
-		padding-bottom: 40px;
-}
-.pilottoronto-link{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #465775;
+.card a{
+	text-decoration: none;
 }
 .contact-container{
-	background-color: #ffffff;
-	padding-top: 60px;
-	padding-bottom: 40px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	padding: 10%;
+	padding-left: 20px;
+	color: #4F5962;
 }
-.contact-avatar{
-	width: 100px;
-	height: 100px;
+.contact-container label{
+	padding: 10px;
 }
 .contact-container a{
 	color: #B2A877;
 }
-.contact-info{
-	padding: 10px;
+.button {
+	width: 160px;
+	border:2px solid #ffffff;
+	font-size:1em;
+	padding:.25em .5em .3125em;
+	color:#ffffff;
+	border-radius:.25em;
+	background:transparent;
+	transition:all .100s;
 }
-.social-media{
-	display: grid;
-	grid-template-columns: 35% 10% 10% 10% 35%;
-}
-.intro-center{
-	margin-top: 15%;
+.button :hover{
+	color: black;
+	background-color: white;
 }
