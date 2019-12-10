@@ -9,6 +9,18 @@ body {
 		grid-template-rows: 30% 10% 10% 10% 10%;
 	}
 }
+/* ipad */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+	.project-container{
+		display: grid;
+		grid-template-rows: auto;
+		justify-content: center;
+	}
+}
+/* ipad pro */
+@media screen and (min-width: 1023px) and (max-width: 1025px) {
+
+}
 @media screen and (min-width: 992px) {
 	.airbnb-project img{
 		width: 500px;
