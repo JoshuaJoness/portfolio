@@ -38,8 +38,7 @@ body {
 }
 .second-container{
 	background-color: #fefefa;
-	background-image: url('/Backpack.jpg');
-	opacity: 0.8;
+	background-image: url('/backpackOpaque.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
