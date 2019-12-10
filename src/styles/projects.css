@@ -8,6 +8,9 @@ body {
 		display: grid;
 		grid-template-rows: 30% 10% 10% 10% 10%;
 	}
+	/* .MuiPaper-root MuiPaper-elevation1 MuiCard-root card MuiPaper-rounded{
+		width: 280px;
+	} */
 }
 /* ipad */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -19,7 +22,13 @@ body {
 }
 /* ipad pro */
 @media screen and (min-width: 1023px) and (max-width: 1025px) {
-
+	.project-container{
+		display: grid;
+		grid-template-rows: auto;
+	}
+	/* .intro-container{
+		background-size: 100vw;
+	} */
 }
 @media screen and (min-width: 992px) {
 	.airbnb-project img{
