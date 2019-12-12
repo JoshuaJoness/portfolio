@@ -33,17 +33,17 @@ class Projects extends React.Component {
 							<div className='project-card-container' >
 								<Card className='card'>
 									<CardActionArea>
-										<a href="http://caloriecounter.tech/" target='_blank'>
+										<a href="http://strongr.best/" target='_blank'>
 										<CardMedia
 											component="img"
 											alt="Contemplative Reptile"
 											height="250"
-											image="./caloriecounter1.png"
+											image="./strongr.png"
 											title="Contemplative Reptile"
 										/></a>
 										<CardContent>
 											<Typography gutterBottom variant="h5" component="h2">
-											<a href="http://caloriecounter.tech/" target='_blank'><h1 className='project-title'>Calorie Counter</h1></a>
+											<a href="http://strongr.best/" target='_blank'><h1 className='project-title'>Strongr</h1></a>
 											</Typography>
 											<Typography variant="body2" color="textSecondary" component="p">
 											<p>This is a simple calorie calculator that I built with React, Node.js, and Express.</p>
