@@ -23,48 +23,7 @@ class Projects extends React.Component {
 								</h1>
 							</center>
 							<div className='project-card-container' >
-							<Card className='card'>
-								<CardActionArea>
-									<a href="https://youtu.be/XIhxI6P3FkI" target='_blank'>
-									<CardMedia
-										component="img"
-										alt="Contemplative Reptile"
-										height="250"
-										image="./foodTracker2.png"
-										title="Contemplative Reptile"
-										style={{height:'100'}}
-									/></a>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											<a href="https://youtu.be/XIhxI6P3FkI" target='_blank'><h1 className='project-title'>Food Tracker (AI Mobile App)</h1></a>
-										</Typography>
-										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
-											<center><b>Highlights</b></center>
-											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<ul>
-													<li>React Native</li>
-													<li>Expo</li>
-													<li>Mobile Development</li>
-													<li>Artificial Intelligence</li>
-												</ul>
-												<ul>
-													<li>Machine Learning</li>
-													<li>APIs</li>
-													<li>Design</li>
-												</ul>
-											</div>
-											<Divider />
-											<center><b>Description</b></center>
-											<p>This is a mobile app that I built using React Native and Expo. What this app does is:<br/><b>1) Takes picture of any food item</b><br/><b>2) AI technology recognizes food item</b><br/><b>3) Client makes a call to nutrition API to retrieve nutritional information for the recognized item</b></p>
-											<Divider />
-											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
-													<i class="fab fa-github" style={{marginTop:'5%'}}></i>
-													<p style={{color:'black'}}><b>Sorry, code not available for this project!</b></p>
-											</div>
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
+
 
 							<Card className='card'>
 								<CardActionArea>
@@ -145,6 +104,50 @@ class Projects extends React.Component {
 												</a>
 												<a className='project-link' href="https://github.com/JoshuaJoness/chat-app-server" target='_blank'>
 													<i class="fab fa-github"></i> (Backend)
+												</a>
+											</div>
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+
+							<Card className='card'>
+								<CardActionArea>
+									<a href="https://youtu.be/XIhxI6P3FkI" target='_blank'>
+									<CardMedia
+										component="img"
+										alt="Contemplative Reptile"
+										height="250"
+										image="./foodTracker2.png"
+										title="Contemplative Reptile"
+										style={{height:'100'}}
+									/></a>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2">
+											<a href="https://youtu.be/XIhxI6P3FkI" target='_blank'><h1 className='project-title'>Food Tracker (AI Mobile App)</h1></a>
+										</Typography>
+										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+											<center><b>Highlights</b></center>
+											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<ul>
+													<li>React Native</li>
+													<li>Expo</li>
+													<li>Mobile Development</li>
+													<li>Artificial Intelligence</li>
+												</ul>
+												<ul>
+													<li>Machine Learning</li>
+													<li>APIs</li>
+													<li>Design</li>
+												</ul>
+											</div>
+											<Divider />
+											<center><b>Description</b></center>
+											<p>This is a mobile app that I built using React Native and Expo. What this app does is:<br/><b>1) Takes picture of any food item</b><br/><b>2) AI technology recognizes food item</b><br/><b>3) Client makes a call to nutrition API to retrieve nutritional information for the recognized item</b></p>
+											<Divider />
+											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<a className='project-link' href="https://github.com/JoshuaJoness/calorie-log" target='_blank'>
+													<i class="fab fa-github"></i>
 												</a>
 											</div>
 										</Typography>
