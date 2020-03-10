@@ -75,6 +75,51 @@ class Projects extends React.Component {
 
 							<Card className='card'>
 								<CardActionArea>
+									<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'>
+									<CardMedia
+										component="img"
+										alt="Image of my app"
+										height="250"
+										image="./fleetTracker.png"
+										title="Fleet Tracker"
+									/></a>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2">
+											<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'><h1 className='project-title'>Fleet Tracker (Video)</h1></a>
+										</Typography>
+										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+											<center><b>Highlights</b></center>
+											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<ul>
+													<li>Electron JS</li>
+													<li>React Native</li>
+													<li>NodeJS</li>
+												</ul>
+												<ul>
+													<li>AWS 3</li>
+													<li>Database design</li>
+													<li>MongoDB</li>
+												</ul>
+											</div>
+											<Divider />
+											<center><b>Description</b></center>
+											<p>This video was made to demonstrate an application that I made as an MVP (minimum viable product) for a potential client who is interested in keeping track of snow plow fleet.<br/><br/>There are two portions to this app, a desktop application and a mobile application. The desktop application was built using Electron. The mobile app was built with React Native.<br/><br/><b>I am considering releasing the desktop application as a .exe file and the mobile app via TestFlight. Electron repo not yet avaialbe. Stay tuned!</b></p>
+											<Divider />
+											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<a className='project-link' href="https://github.com/JoshuaJoness/trackeeApp" target='_blank'>
+													<i class="fab fa-github"></i> (Mobile App)
+												</a>
+												<a className='project-link' href="https://github.com/JoshuaJoness/tracker-server" target='_blank'>
+													<i class="fab fa-github"></i> (Server)
+												</a>
+											</div>
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+
+							<Card className='card'>
+								<CardActionArea>
 									<a href="http://joshua-chat-app.herokuapp.com/" target='_blank'>
 									<CardMedia
 										component="img"
@@ -147,7 +192,49 @@ class Projects extends React.Component {
 											<Divider />
 											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
 												<a className='project-link' href="https://github.com/JoshuaJoness/calorie-log" target='_blank'>
-													<i class="fab fa-github"></i>
+													<i class="fab fa-github"></i> (Repository)
+												</a>
+											</div>
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+
+							<Card className='card'>
+								<CardActionArea>
+									<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'>
+									<CardMedia
+										component="img"
+										alt=""
+										height="250"
+										image="./angular.png"
+										title=""
+									/></a>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2" >
+											<p className='project-title'>Angular</p>
+											<div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr', alignItems:'center', marginTop:-50}}>
+												<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'><h1 className='project-title'>(To-do List</h1></a>
+												<p>&</p>
+												<a href="https://joshua-angular-ui.herokuapp.com/" target='_blank'><h1 className='project-title'>Mock-up)</h1></a>
+											</div>
+										</Typography>
+										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+											<center><b>Highlights</b></center>
+												<ul style={{display:'grid', gridTemplateColumns: '1fr 1fr'}}>
+													<li>Angular 9</li>
+													<li>Bootstrap</li>
+												</ul>
+											<Divider />
+											<center><b>Description</b></center>
+											<p>These are two Angular projects that I created to familiarize myself with the framework. The to-do list was created by following a tutorial and the mock-up was me creating something on my own to further deepen my understanding of Angular.</p>
+											<Divider />
+											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<a className='project-link' href="https://github.com/JoshuaJoness/myapp" target='_blank'>
+													<i class="fab fa-github"></i> (To-do list)
+												</a>
+												<a className='project-link' href="https://github.com/JoshuaJoness/example" target='_blank'>
+													<i class="fab fa-github"></i> (Mock-up)
 												</a>
 											</div>
 										</Typography>
