@@ -26,91 +26,62 @@ class Projects extends React.Component {
 							Projects
 						</h1>
 					</center>
-							
-<center >
-	<div style={{backgroundColor:"#FFFFF4", width:"80%", margin:"5%", border:"1px solid white", borderRadius:"6px"}}>
-		<center><Typography gutterBottom variant="h5" component="h2">
-			<center><h1 className='big-card-title'>Calorie Cam</h1></center>
-		</Typography></center>		
-		
-		<br />
-{
-window.innerWidth > 500 ?
-<div>
-		<div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly", marginBottom:"5%"}}>
-			<img src="./calorieCam.jpeg" style={{height:"500px"}}/>
-			
-
-			<img src="./calorieCam2.PNG" style={{height:"500px"}}/>
-			
-			<img src="./calorieCam3.PNG" style={{height:"500px"}}/>
-			
-			<img src="./calorieCam4.PNG" style={{height:"500px"}}/>
-
-		</div>
-		<center>
-			<iframe width="80%" height="600px"
-			src="https://www.youtube.com/embed/O4IJs9kvR9U">
-			</iframe>
-		</center>
-
-</div>
-:
-		<div>
-			<img src="./calorieCam.jpeg" style={{height:"500px", marginBottom:"10%"}}/>
-				<center>
-					<iframe width="80%" height="100%"
-					src="https://www.youtube.com/embed/O4IJs9kvR9U">
-					</iframe>
-				</center>
-		</div>
-}
-			
-		
-<h1>Try it yourself!</h1>
-<h2>1) Download the Expo app.</h2>
-<h2>2) Scan the QR code below.</h2>
-		<center><img src="./scan.png" style={{height:"200px"}}/></center>
-
-<Divider />
-<p style={{fontSize:"20px", marginLeft:"10%", marginRight:"10%", marginTop:"5%"}}>This is a mobile application that I built with <b style={{fontSize:"30px"}}>React Native</b> and <b style={{fontSize:"30px"}}>Expo</b>. 
-When you take a picture of your food, the picture is sent to the Clarifai API which uses machine learning to recognize the food item. Clarifai 
-returns the name of the food. I then take this name and make a request to another API which then returns the nutrional infromation for the food item. 
-Users can then choose to log this information.</p>
-		
-					<a className='big-card-link' href="https://github.com/JoshuaJoness/calorie-log" target='_blank'>
-						Check out my code!
-						<i class="fas fa-hand-point-right" style={{marginLeft:"2%"}}></i>   
-						<i class="fab fa-github" style={{marginTop:"2%", marginBottom:"5%", marginLeft:"2%", fontSize:"40px"}}></i> 
-					</a>
-
-</div>
-
-
-
-
-
 					
-						
-</center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			
+					<center >
+						<div style={{backgroundColor:"#FFFFF4", {window.innerWidth > 500 ? width:"80%" : width:"90%"}, margin:"5%", border:"1px solid white", borderRadius:"6px"}}>
+							<center>
+								<Typography gutterBottom variant="h5" component="h2">
+									<center><h1 className='big-card-title'>Calorie Cam</h1></center>
+								</Typography>
+							</center>		
+							<br />
+						{	window.innerWidth > 500 ?
+						<div>
+							<div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly", marginBottom:"5%"}}>
+								<img src="./calorieCam.jpeg" style={{height:"500px"}}/>
+								<img src="./calorieCam2.PNG" style={{height:"500px"}}/>
+								<img src="./calorieCam3.PNG" style={{height:"500px"}}/>
+								<img src="./calorieCam4.PNG" style={{height:"500px"}}/>
+							</div>
+								<center>
+									<iframe width="80%" height="600px"
+									src="https://www.youtube.com/embed/O4IJs9kvR9U">
+									</iframe>
+								</center>
+							</div>
+							:
+							<div>
+								<img src="./calorieCam.jpeg" style={{height:"500px", marginBottom:"10%"}}/>
+									<center>
+										<iframe width="80%" height="100%"
+										src="https://www.youtube.com/embed/O4IJs9kvR9U">
+										</iframe>
+									</center>
+							</div>
+							}
+							<h1>Try it yourself!</h1>
+							<h2>1) Download the Expo app.</h2>
+							<h2>2) Scan the QR code below.</h2>
+							<center><img src="./scan.png" style={{height:"200px"}}/></center>
+							<Divider />
+							<p style={{fontSize:"20px", marginLeft:"10%", marginRight:"10%", marginTop:"5%"}}>
+								This is a mobile application that I built with <b style={{fontSize:"30px"}}>React Native</b> and <b style={{fontSize:"30px"}}>Expo</b>. 
+								When you take a picture of your food, the picture is sent to the Clarifai API which uses machine learning to recognize the food item. Clarifai 
+								returns the name of the food. I then take this name and make a request to another API which then returns the nutrional infromation for the food item. 
+								Users can then choose to log this information.
+							</p>
+							<a className='big-card-link' href="https://github.com/JoshuaJoness/calorie-log" target='_blank'>
+								Check out my code!
+								{ window.innerWidth > 500 ?
+								<i class="fas fa-hand-point-right" style={{marginLeft:"2%"}}></i>
+ 								:
+								<i class="fas fa-hand-point-down" style={{marginLeft:"2%"}}></i>
+								}
+								<i class="fab fa-github" style={{marginTop:"2%", marginBottom:"5%", marginLeft:"2%", fontSize:"40px"}}></i> 
+							</a>
+						</div>
+					</center>
 
 
 
