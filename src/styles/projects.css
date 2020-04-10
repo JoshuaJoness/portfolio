@@ -97,6 +97,11 @@ body {
 	font-weight: 100;
 	color: #465775;
 }
+.big-card-title{
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
+	font-weight: 100;
+}
 .project-image{
 	width: 90%;
 	border-radius: 6px;
@@ -155,6 +160,26 @@ a:hover{
 	opacity: 0.5;
 }
 
-h1:hover{
+/* h1:hover{
 	opacity: 0.5;
+} */
+
+.fa-arrow-right {
+	font-size: 50px;
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+a{
+	text-decoration: none;
+}
+
+.big-card-link{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: #3d4447;
+	padding: 8%;
 }
