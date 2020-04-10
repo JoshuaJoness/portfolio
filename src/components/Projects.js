@@ -26,10 +26,9 @@ class Projects extends React.Component {
 							Projects
 						</h1>
 					</center>
-					
-			
+					{ /* Carlorie Cam card */}
 					<center >
-						<div style={{backgroundColor:"#FFFFF4", {window.innerWidth > 500 ? width:"80%" : width:"90%"}, margin:"5%", border:"1px solid white", borderRadius:"6px"}}>
+						<div style={{backgroundColor:"#FFFFF4", width:"80%", margin:"5%", border:"1px solid white", borderRadius:"6px"}}>
 							<center>
 								<Typography gutterBottom variant="h5" component="h2">
 									<center><h1 className='big-card-title'>Calorie Cam</h1></center>
@@ -83,10 +82,8 @@ class Projects extends React.Component {
 						</div>
 					</center>
 
-
-
-<div className='project-card-container' >
-
+					{/* AirBnb Card */}
+					<div className='project-card-container'>
 							<Card className='card'>
 								<CardActionArea>
 									<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'>
@@ -98,9 +95,12 @@ class Projects extends React.Component {
 										title="AirBnb"
 									/></a>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'><h1 className='project-title'>Airbnb Clone</h1></a>
-										</Typography>
+										<center>
+											<Typography gutterBottom variant="h5" component="h2">
+												<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'><h1 className='project-title'>Airbnb Clone</h1></a>
+											</Typography>
+										</center>
+										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 											<center><b>Highlights</b></center>
 											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
@@ -142,14 +142,16 @@ class Projects extends React.Component {
 									<CardMedia
 										component="img"
 										alt="Image of my app"
-										height="100%"
+										height="250"
 										image="./fleetTracker.png"
 										title="Fleet Tracker"
 									/></a>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'><h1 className='project-title'>Fleet Tracker (Video)</h1></a>
-										</Typography>
+										<center>
+											<Typography gutterBottom variant="h5" component="h2">
+												<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'><h1 className='project-title'>Fleet Tracker (Video)</h1></a>
+											</Typography>
+										</center>		
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 											<center><b>Highlights</b></center>
 											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
@@ -192,9 +194,12 @@ class Projects extends React.Component {
 										title="Contemplative Reptile"
 									/></a>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-										<a href="http://joshua-chat-app.herokuapp.com/" target='_blank'><h1 className='project-title'>Real-Time Chat App</h1></a>
-										</Typography>
+										<center>
+											<Typography gutterBottom variant="h5" component="h2">
+												<a href="http://joshua-chat-app.herokuapp.com/" target='_blank'><h1 className='project-title'>Real-Time Chat App</h1></a>
+											</Typography>
+										</center>
+										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 											<center><b>Highlights</b></center>
 											<ul>
@@ -232,14 +237,16 @@ class Projects extends React.Component {
 										title=""
 									/></a>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2" >
-											<p className='project-title'>Angular</p>
-											<div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr', alignItems:'center', marginTop:-50}}>
-												<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'><h1 className='project-title'>(To-do List</h1></a>
-												<p>&</p>
-												<a href="https://joshua-angular-ui.herokuapp.com/" target='_blank'><h1 className='project-title'>Mock-up)</h1></a>
-											</div>
-										</Typography>
+										<center>
+											<Typography gutterBottom variant="h5" component="h2" >
+												<p className='project-title'>Angular</p>
+												<div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr', alignItems:'center', marginTop:-50}}>
+													<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'><h1 className='project-title'>(To-do List</h1></a>
+													<p>&</p>
+													<a href="https://joshua-angular-ui.herokuapp.com/" target='_blank'><h1 className='project-title'>Mock-up)</h1></a>
+												</div>
+											</Typography>
+										</center>
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 											<center><b>Highlights</b></center>
 												<ul style={{display:'grid', gridTemplateColumns: '1fr 1fr'}}>
@@ -274,9 +281,11 @@ class Projects extends React.Component {
 											title="Contemplative Reptile"
 										/></a>
 										<CardContent>
-											<Typography gutterBottom variant="h5" component="h2">
-											<a href="http://strongr.best/" target='_blank'><h1 className='project-title'>Strongr (Calorie Calculator)</h1></a>
-											</Typography>
+											<center>
+												<Typography gutterBottom variant="h5" component="h2">
+													<a href="http://strongr.best/" target='_blank'><h1 className='project-title'>Strongr (Calorie Calculator)</h1></a>
+												</Typography>
+											</center>
 											<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 												<center><b>Highlights</b></center>
 												<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
@@ -318,9 +327,11 @@ class Projects extends React.Component {
 											title="Contemplative Reptile"
 										/></a>
 										<CardContent>
-											<Typography gutterBottom variant="h5" component="h2">
-												<a href="http://pilottoronto.ca/" target='_blank'><h1 className='project-title'>Pilot Pickup</h1></a>
-											</Typography>
+											<center>
+												<Typography gutterBottom variant="h5" component="h2">
+													<a href="http://pilottoronto.ca/" target='_blank'><h1 className='project-title'>Pilot Pickup</h1></a>
+												</Typography>
+											</center>
 											<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
 												<center><b>Highlights</b></center>
 												<ul>
