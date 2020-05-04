@@ -102,6 +102,7 @@ class Projects extends React.Component {
 										</center>
 										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+<div style={{height:"150px"}}>
 											<center><b>Highlights</b></center>
 											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
 												<ul>
@@ -118,7 +119,9 @@ class Projects extends React.Component {
 													<li>Cloudinary</li>
 												</ul>
 											</div>
+	</div>
 											<Divider />
+			<div style={{height:"300px", marginTop:"5%"}}>							
 											<center><b>Description</b></center>
 											<p>This is an AirBnb clone. It was built using React, Node.js, MongoDB, and Express. JSON webtokens, B-Crypt, Axios, Cloudinary and Stripe were also used.<br/><br/>The real highlights of this project are that it is a fullstack application where I built a RESTful API, that performs CRUD operations. Authentication of users is another highlight.<br/><br/><b>**Please note, currently viewable on desktop only</b></p>
 											<Divider />
@@ -130,6 +133,7 @@ class Projects extends React.Component {
 													<i class="fab fa-github"></i> (Backend)
 												</a>
 											</div>
+</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
@@ -153,6 +157,7 @@ class Projects extends React.Component {
 											</Typography>
 										</center>		
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+<div style={{height:"150px"}}>
 											<center><b>Highlights</b></center>
 											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
 												<ul>
@@ -166,9 +171,11 @@ class Projects extends React.Component {
 													<li>MongoDB</li>
 												</ul>
 											</div>
+</div>
 											<Divider />
+<div style={{height:"300px", marginTop:"5%"}}>
 											<center><b>Description</b></center>
-											<p>This video was made to demonstrate an application that I made as an MVP (minimum viable product) for a potential client who is interested in keeping track of snow plow fleet.<br/><br/>There are two portions to this app, a desktop application and a mobile application. The desktop application was built using Electron. The mobile app was built with React Native.<br/><br/><b>I am considering releasing the desktop application as a .exe file and the mobile app via TestFlight. Electron repo not yet avaialbe. Stay tuned!</b></p>
+											<p>This video was made to demonstrate an application that I made as an MVP (minimum viable product) for a potential client who is interested in keeping track of snow plow fleet.<br/><br/>There are two portions to this app, a desktop application and a mobile application. The desktop application was built using Electron. The mobile app was built with React Native.<br/><br/></p>
 											<Divider />
 											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
 												<a className='project-link' href="https://github.com/JoshuaJoness/trackeeApp" target='_blank'>
@@ -178,6 +185,7 @@ class Projects extends React.Component {
 													<i class="fab fa-github"></i> (Server)
 												</a>
 											</div>
+</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
@@ -201,12 +209,15 @@ class Projects extends React.Component {
 										</center>
 										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+<div style={{height:"150px"}}>
 											<center><b>Highlights</b></center>
 											<ul>
 												<li>WebSockets</li>
 												<li>React Hooks (useState, useEffect)</li>
 											</ul>
+</div>
 											<Divider />
+<div style={{height:"300px", marginTop:"5%"}}>
 											<center><b>Description</b></center>
 											<p>This is a real-time chat application built with React, NodeJS, and WebSockets. This project demonstrates my knowledge of React hooks particularly the 'useState' and 'useEffect' hooks.
 											<br/><br/>Users are promted to login with a name and a room. They can then chat in realtime with anyone in the same room.</p>
@@ -219,6 +230,7 @@ class Projects extends React.Component {
 													<i class="fab fa-github"></i> (Backend)
 												</a>
 											</div>
+</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
@@ -361,8 +373,9 @@ class Projects extends React.Component {
 							<h1 className='contact-title'>Contact</h1>
 							<label><b>E-mail: </b>joshuajonesdev@gmail.com</label>
 							<label><b>Tel: </b>+1(647)-893-5547</label>
-							<label><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/"><i class="fab fa-linkedin"></i></a></label>
-							<label><b>GitHub: </b><a href="https://github.com/joshuajoness"><i class="fab fa-github-square"></i></a></label>
+							<label><b>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/" target="blank"><i class="fab fa-linkedin"></i></a></label>
+							<label><b>GitHub: </b><a href="https://github.com/joshuajoness" target="blank"><i class="fab fa-github-square"></i></a></label>
+							<label><b>Resume: </b><a href="https://resume.io/r/KouuKJVA7" target="blank">Click here</a></label>
 						</div>
 			</div>
 		)
