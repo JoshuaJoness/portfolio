@@ -18,72 +18,81 @@ class Projects extends React.Component {
 
 		return(
 			<div className='project-thumbnail-container'>
+				{/* Nav */}
 				<Nav />
+				{/* first imag */}
 				<div className='intro-container' id='intro'></div>
+				{/* container for project cards */}
 				<div className='project-container' id='projects'>
 					<center>
 						<h1 className='title'>
 							Projects
 						</h1>
 					</center>
-					{ /* Carlorie Cam card */}
-					<center >
-						<div style={{backgroundColor:"#FFFFF4", width:"80%", margin:"5%", border:"1px solid white", borderRadius:"6px"}}>
-							<center>
-								<Typography gutterBottom variant="h5" component="h2">
-									<center><h1 className='big-card-title'>Calorie Cam</h1></center>
-								</Typography>
-							</center>		
-							<br />
-						{	window.innerWidth > 500 ?
-						<div>
-							<div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly", marginBottom:"5%"}}>
-								<img src="./calorieCam.jpeg" style={{height:"500px"}}/>
-								<img src="./calorieCam2.PNG" style={{height:"500px"}}/>
-								<img src="./calorieCam3.PNG" style={{height:"500px"}}/>
-								<img src="./calorieCam4.PNG" style={{height:"500px"}}/>
-							</div>
-								<center>
-									<iframe width="80%" height="600px"
-									src="https://www.youtube.com/embed/O4IJs9kvR9U">
-									</iframe>
-								</center>
-							</div>
-							:
-							<div>
-								<img src="./calorieCam.jpeg" style={{height:"500px", marginBottom:"10%"}}/>
-									<center>
-										<iframe width="80%" height="100%"
-										src="https://www.youtube.com/embed/O4IJs9kvR9U">
-										</iframe>
-									</center>
-							</div>
-							}
-							<h1>Try it yourself!</h1>
-							<h2>1) Download the Expo app.</h2>
-							<h2>2) Scan the QR code below.</h2>
-							<center><img src="./scan.png" style={{height:"200px"}}/></center>
-							<Divider />
-							<p style={{fontSize:"20px", marginLeft:"10%", marginRight:"10%", marginTop:"5%"}}>
-								This is a mobile application that I built with <b style={{fontSize:"30px"}}>React Native</b> and <b style={{fontSize:"30px"}}>Expo</b>. 
-								When you take a picture of your food, the picture is sent to the Clarifai API which uses machine learning to recognize the food item. Clarifai 
-								returns the name of the food. I then take this name and make a request to another API which then returns the nutrional infromation for the food item. 
-								Users can then choose to log this information.
-							</p>
-							<a className='big-card-link' href="https://github.com/JoshuaJoness/calorie-log" target='_blank'>
-								Check out my code!
-								{ window.innerWidth > 500 ?
-								<i class="fas fa-hand-point-right" style={{marginLeft:"2%"}}></i>
- 								:
-								<i class="fas fa-hand-point-down" style={{marginLeft:"2%"}}></i>
-								}
-								<i class="fab fa-github" style={{marginTop:"2%", marginBottom:"5%", marginLeft:"2%", fontSize:"40px"}}></i> 
-							</a>
-						</div>
-					</center>
 
-					{/* AirBnb Card */}
 					<div className='project-card-container'>
+
+						{ /* Carlorie Cam card */}
+						<Card className='card'>
+							<CardActionArea>		
+								<iframe 
+									width="100%" 
+									height="250px" 
+									volume="0" 
+									allowFullScreen
+									src="https://www.youtube.com/embed/O4IJs9kvR9U">
+								</iframe>
+
+								<CardContent>
+									<center>
+										<Typography gutterBottom variant="h5" component="h2">
+											<a href="https://www.youtube.com/embed/O4IJs9kvR9U" target='_blank'>
+												<h1 className='project-title'>Calorie Cam</h1>
+											</a>
+										</Typography>
+									</center>
+									
+									<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
+										<div style={{height:"150px"}}>
+											<center><b>Highlights</b></center>
+											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<ul>
+													<li>React Native</li>
+													<li>Expo</li>
+													<li>Released to Apple's App Store</li>
+												</ul>
+												<ul>
+													<li>API integration</li>
+													<li>Depolyment</li>
+													<li>UI</li>
+													<li>UX</li>
+												</ul>
+											</div>
+										</div>
+										<Divider />
+
+										<div style={{height:"300px", marginTop:"5%"}}>							
+											
+											{/*}
+												<center><b>Description</b></center>
+											<p>This is a mobile application that I built for both iOS and Android using React Native and Expo. The App is currently being uploaded to the App Store and I will provide a link once it is available.</p>
+											<Divider />*/}
+
+											<img src={require('./appStore.jpg')} style ={{height:250, width:'100%'}}/>
+
+											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+												<a className='project-link' href="https://github.com/JoshuaJoness/calorie-cam" target='_blank'>
+													<i class="fab fa-github"></i>
+												</a>
+											</div> 
+										</div>
+										
+									</Typography>
+								</CardContent>
+							</CardActionArea>
+						</Card>
+
+							{ /* AirBnb card */}
 							<Card className='card'>
 								<CardActionArea>
 									<a href="https://airbnb-joshua.herokuapp.com/" target='_blank'>
@@ -102,95 +111,44 @@ class Projects extends React.Component {
 										</center>
 										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
-<div style={{height:"150px"}}>
-											<center><b>Highlights</b></center>
-											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<ul>
-													<li>MongoDB (No SQL database)</li>
-													<li>React</li>
-													<li>NodeJs</li>
-													<li>RESTful API</li>
-												</ul>
-												<ul>
-													<li>CRUD operations</li>
-													<li>JSON Web Tokens</li>
-													<li>B-Crypt</li>
-													<li>Stripe</li>
-													<li>Cloudinary</li>
-												</ul>
+											<div style={{height:"150px"}}>
+												<center><b>Highlights</b></center>
+												<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
+													<ul>
+														<li>MongoDB (No SQL database)</li>
+														<li>React</li>
+														<li>NodeJs</li>
+														<li>RESTful API</li>
+													</ul>
+													<ul>
+														<li>CRUD operations</li>
+														<li>JSON Web Tokens</li>
+														<li>B-Crypt</li>
+														<li>Stripe</li>
+														<li>Cloudinary</li>
+													</ul>
+												</div>
 											</div>
-	</div>
 											<Divider />
-			<div style={{height:"300px", marginTop:"5%"}}>							
-											<center><b>Description</b></center>
-											<p>This is an AirBnb clone. It was built using React, Node.js, MongoDB, and Express. JSON webtokens, B-Crypt, Axios, Cloudinary and Stripe were also used.<br/><br/>The real highlights of this project are that it is a fullstack application where I built a RESTful API, that performs CRUD operations. Authentication of users is another highlight.<br/><br/><b>**Please note, currently viewable on desktop only</b></p>
-											<Divider />
-											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>
-													<i class="fab fa-github"></i> (Frontend)
-												</a>
-												<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>
-													<i class="fab fa-github"></i> (Backend)
-												</a>
+											<div style={{height:"300px", marginTop:"5%"}}>							
+												<center><b>Description</b></center>
+												<p>This is an AirBnb clone. It was built using React, Node.js, MongoDB, and Express. JSON webtokens, B-Crypt, Axios, Cloudinary and Stripe were also used.<br/><br/>The real highlights of this project are that it is a fullstack application where I built a RESTful API, that performs CRUD operations. Authentication of users is another highlight.<br/><br/><b>**Please note, currently viewable on desktop only</b></p>
+												<Divider />
+												<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+													<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-react" target='_blank'>
+														<i class="fab fa-github"></i> (Frontend)
+													</a>
+													<a className='project-link' href="https://github.com/JoshuaJoness/airbnb-api" target='_blank'>
+														<i class="fab fa-github"></i> (Backend)
+													</a>
+												</div>
 											</div>
-</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
 							</Card>
 					
-
-							<Card className='card'>
-								<CardActionArea>
-									<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'>
-									<CardMedia
-										component="img"
-										alt="Image of my app"
-										height="250"
-										image="./fleetTracker.png"
-										title="Fleet Tracker"
-									/></a>
-									<CardContent>
-										<center>
-											<Typography gutterBottom variant="h5" component="h2">
-												<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'><h1 className='project-title'>Fleet Tracker (Video)</h1></a>
-											</Typography>
-										</center>		
-										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
-<div style={{height:"150px"}}>
-											<center><b>Highlights</b></center>
-											<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<ul>
-													<li>Electron JS</li>
-													<li>React Native</li>
-													<li>NodeJS</li>
-												</ul>
-												<ul>
-													<li>AWS 3</li>
-													<li>Database design</li>
-													<li>MongoDB</li>
-												</ul>
-											</div>
-</div>
-											<Divider />
-<div style={{height:"300px", marginTop:"5%"}}>
-											<center><b>Description</b></center>
-											<p>This video was made to demonstrate an application that I made as an MVP (minimum viable product) for a potential client who is interested in keeping track of snow plow fleet.<br/><br/>There are two portions to this app, a desktop application and a mobile application. The desktop application was built using Electron. The mobile app was built with React Native.<br/><br/></p>
-											<Divider />
-											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<a className='project-link' href="https://github.com/JoshuaJoness/trackeeApp" target='_blank'>
-													<i class="fab fa-github"></i> (Mobile App)
-												</a>
-												<a className='project-link' href="https://github.com/JoshuaJoness/tracker-server" target='_blank'>
-													<i class="fab fa-github"></i> (Server)
-												</a>
-											</div>
-</div>
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
-
+						{ /* Chat App card */}
 							<Card className='card'>
 								<CardActionArea>
 									<a href="http://joshua-chat-app.herokuapp.com/" target='_blank'>
@@ -209,79 +167,86 @@ class Projects extends React.Component {
 										</center>
 										
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
-<div style={{height:"150px"}}>
-											<center><b>Highlights</b></center>
-											<ul>
-												<li>WebSockets</li>
-												<li>React Hooks (useState, useEffect)</li>
-											</ul>
-</div>
-											<Divider />
-<div style={{height:"300px", marginTop:"5%"}}>
-											<center><b>Description</b></center>
-											<p>This is a real-time chat application built with React, NodeJS, and WebSockets. This project demonstrates my knowledge of React hooks particularly the 'useState' and 'useEffect' hooks.
-											<br/><br/>Users are promted to login with a name and a room. They can then chat in realtime with anyone in the same room.</p>
-											<Divider />
-											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<a className='project-link' href="https://github.com/JoshuaJoness/chat-app" target='_blank'>
-													<i class="fab fa-github"></i> (Frontend)
-												</a>
-												<a className='project-link' href="https://github.com/JoshuaJoness/chat-app-server" target='_blank'>
-													<i class="fab fa-github"></i> (Backend)
-												</a>
+											<div style={{height:"150px"}}>
+												<center><b>Highlights</b></center>
+												<ul>
+													<li>WebSockets</li>
+													<li>React Hooks (useState, useEffect)</li>
+												</ul>
 											</div>
-</div>
+											<Divider />
+											<div style={{height:"300px", marginTop:"5%"}}>
+												<center><b>Description</b></center>
+												<p>This is a real-time chat application built with React, NodeJS, and WebSockets. This project demonstrates my knowledge of React hooks particularly the 'useState' and 'useEffect' hooks.
+												<br/><br/>Users are promted to login with a name and a room. They can then chat in realtime with anyone in the same room.</p>
+												<Divider />
+												<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+													<a className='project-link' href="https://github.com/JoshuaJoness/chat-app" target='_blank'>
+														<i class="fab fa-github"></i> (Frontend)
+													</a>
+													<a className='project-link' href="https://github.com/JoshuaJoness/chat-app-server" target='_blank'>
+														<i class="fab fa-github"></i> (Backend)
+													</a>
+												</div>
+											</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
 							</Card>
-
-						
-
+							
+							{ /* Fleet Tracker card */}
 							<Card className='card'>
 								<CardActionArea>
-									<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'>
+									<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'>
 									<CardMedia
 										component="img"
-										alt=""
+										alt="Image of my app"
 										height="250"
-										image="./angular.png"
-										title=""
+										image="./fleetTracker.png"
+										title="Fleet Tracker"
 									/></a>
 									<CardContent>
 										<center>
-											<Typography gutterBottom variant="h5" component="h2" >
-												<p className='project-title'>Angular</p>
-												<div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr', alignItems:'center', marginTop:-50}}>
-													<a href="https://joshua-angular-todo.herokuapp.com/" target='_blank'><h1 className='project-title'>(To-do List</h1></a>
-													<p>&</p>
-													<a href="https://joshua-angular-ui.herokuapp.com/" target='_blank'><h1 className='project-title'>Mock-up)</h1></a>
-												</div>
+											<Typography gutterBottom variant="h5" component="h2">
+												<a href="https://youtu.be/Yl7txrh6f4s" target='_blank'><h1 className='project-title'>Fleet Tracker (Video)</h1></a>
 											</Typography>
-										</center>
+										</center>		
 										<Typography variant="body2" color="textSecondary" component="p" style={{color:'black'}}>
-											<center><b>Highlights</b></center>
-												<ul style={{display:'grid', gridTemplateColumns: '1fr 1fr'}}>
-													<li>Angular 9</li>
-													<li>Bootstrap</li>
-												</ul>
-											<Divider />
-											<center><b>Description</b></center>
-											<p>These are two Angular projects that I created to familiarize myself with the framework. The to-do list was created by following a tutorial and the mock-up was me creating something on my own to further deepen my understanding of Angular.</p>
-											<Divider />
-											<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
-												<a className='project-link' href="https://github.com/JoshuaJoness/myapp" target='_blank'>
-													<i class="fab fa-github"></i> (To-do list)
-												</a>
-												<a className='project-link' href="https://github.com/JoshuaJoness/example" target='_blank'>
-													<i class="fab fa-github"></i> (Mock-up)
-												</a>
+											<div style={{height:"150px"}}>
+												<center><b>Highlights</b></center>
+												<div style={{display: 'grid', gridTemplateColumns:'1fr 1fr'}}>
+													<ul>
+														<li>Electron JS</li>
+														<li>React Native</li>
+														<li>NodeJS</li>
+													</ul>
+													<ul>
+														<li>AWS 3</li>
+														<li>Database design</li>
+														<li>MongoDB</li>
+													</ul>
+												</div>
 											</div>
+											<Divider />
+											<div style={{height:"300px", marginTop:"5%"}}>
+												<center><b>Description</b></center>
+												<p>This video was made to demonstrate an application that I made as an MVP (minimum viable product) for a potential client who is interested in keeping track of snow plow fleet.<br/><br/>There are two portions to this app, a desktop application and a mobile application. The desktop application was built using Electron. The mobile app was built with React Native.<br/><br/></p>
+												<Divider />
+												<div style={{display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+													<a className='project-link' href="https://github.com/JoshuaJoness/trackeeApp" target='_blank'>
+														<i class="fab fa-github"></i> (Mobile App)
+													</a>
+													<a className='project-link' href="https://github.com/JoshuaJoness/tracker-server" target='_blank'>
+														<i class="fab fa-github"></i> (Server)
+													</a>
+												</div>
+										</div>
 										</Typography>
 									</CardContent>
 								</CardActionArea>
 							</Card>
 
+								{ /* Strongr card */}
 								<Card className='card'>
 									<CardActionArea>
 										<a href="http://strongr.best/" target='_blank'>
@@ -328,6 +293,7 @@ class Projects extends React.Component {
 									</CardActionArea>
 								</Card>
 
+								{ /* Pilot card */}
 								<Card className='card'>
 									<CardActionArea>
 										<a href="http://pilottoronto.ca/" target='_blank'>
