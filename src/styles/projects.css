@@ -1,5 +1,5 @@
 body {
-	background-color: #465775;
+	background-color: #78899E;
 	font-family: 'Saira Condensed', sans-serif;
 }
 /* Mobile vertical */
@@ -66,7 +66,7 @@ body {
 .title{
 	font-size: 50px;
 	font-weight: 300;
-	color: #A38E6F;
+	color: #79634E;
 	font-family: 'Pacifico', cursive;
 }
 .second-container{
@@ -85,10 +85,10 @@ body {
 	border: 2px solid white;
 }
 .project-container{
-	background-color: #465775;
+	background-color: #78899E;
 }
 .project-card-container{
-	background-color: #465775;
+	background-color: #78899E;
 	padding-top:
 }
 .project-title{
@@ -128,14 +128,14 @@ body {
 .contact-title{
 	font-size: 35px;
 	font-weight: 300;
-	color: #A38E6F;
+	color: #79634E;
 	font-family: 'Pacifico', cursive;
 }
 .contact-container label{
 	padding: 10px;
 }
 .contact-container a{
-	color: #B2A877;
+	color: #79634E;
 }
 .button {
 	font-family: 'Saira Condensed', sans-serif;
@@ -150,19 +150,22 @@ body {
 	background:#465775;
 	transition:all .100s;
 }
-.button :hover{
-	color: black;
-	background-color: white;
-	cursor: pointer;
-}
+
 
 a:hover{
 	opacity: 0.5;
+	cursor: pointer;
+}
+.label:hover{
+	opacity: 0.8;
+	cursor: not-allowed
 }
 
-/* h1:hover{
-	opacity: 0.5;
-} */
+
+button:hover{
+	opacity:0.7;
+	cursor: pointer;
+}
 
 .fa-arrow-right {
 	font-size: 50px;
@@ -174,12 +177,4 @@ img:hover {
 
 a{
 	text-decoration: none;
-}
-
-.big-card-link{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	font-size: 25px;
-	color: #3d4447;
-	padding: 8%;
 }
