@@ -66,7 +66,7 @@ body {
 .title{
 	font-size: 50px;
 	font-weight: 300;
-	color: #79634E;
+	color: #F6C28B;
 	font-family: 'Pacifico', cursive;
 }
 .second-container{
@@ -123,19 +123,36 @@ body {
 .contact-container{
 	padding-left: 20px;
 	color: #ffffff;
-
+	margin-left: 5%;
+	margin-bottom: 2%;
+	display: inline-block;
+}
+.appstore-container{
+	padding-left: 20px;
+	color: #ffffff;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	display: inline-block;
+}
+.appstore-container label{
+	padding: 10px;	
+	display: flex;
+	flex-direction: row;
 }
 .contact-title{
 	font-size: 35px;
 	font-weight: 300;
-	color: #79634E;
+	color: #F6C28B;
 	font-family: 'Pacifico', cursive;
 }
 .contact-container label{
 	padding: 10px;
+	display: flex;
+	flex-direction: row;
 }
 .contact-container a{
-	color: #79634E;
+	color: #F6C28B;
+	align-self: center;
 }
 .button {
 	font-family: 'Saira Condensed', sans-serif;
@@ -153,7 +170,7 @@ body {
 
 
 a:hover{
-	opacity: 0.5;
+	opacity: 0.9;
 	cursor: pointer;
 }
 .label:hover{
@@ -163,7 +180,7 @@ a:hover{
 
 
 button:hover{
-	opacity:0.7;
+	opacity:0.8;
 	cursor: pointer;
 }
 

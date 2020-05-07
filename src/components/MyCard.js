@@ -126,7 +126,7 @@ const styles = {
     borderRadius:'6px',
     width:'160px',
     height:'50px',
-    color:'#B2A877',
+    color:'#F6C28B',
     fontSize:'1.2rem',
     fontFamily: "'Baloo 2', cursive",
     fontWeight:'bold',
