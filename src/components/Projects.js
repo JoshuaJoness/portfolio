@@ -107,7 +107,7 @@ class Projects extends React.Component {
 						<h1 className='contact-title'>Contact</h1>
 						<label><b style={{marginRight:'5px'}}>E-mail: </b>joshuajonesdev@gmail.com</label>
 						<label><b style={{marginRight:'5px'}}>Tel: </b>+1(647)-873-5547</label>
-						<label><b style={{marginRight:'5px'}}>LinkedIn: </b><a href="https://www.linkedin.com/in/joshua-jones-6589a2b9/" target="blank"><i class="fab fa-linkedin"></i></a></label>
+						<label><b style={{marginRight:'5px'}}>LinkedIn: </b><a href="https://www.linkedin.com/in/joshuajoness/" target="blank"><i class="fab fa-linkedin"></i></a></label>
 						<label><b style={{marginRight:'5px'}}>GitHub: </b><a href="https://github.com/joshuajoness" target="blank"><i class="fab fa-github-square"></i></a></label>
 						<label><b style={{marginRight:'5px'}}>Resume: </b><a href="https://resume.io/r/KouuKJVA7" target="blank">Click here</a></label>
 					</div>
