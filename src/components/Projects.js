@@ -33,14 +33,14 @@ class Projects extends React.Component {
 			projectLinks:['https://github.com/JoshuaJoness/airbnb-react', 'https://github.com/JoshuaJoness/airbnb-api']
 		},
 		chatApp: {
-			projectTitle:'Real-Time Chat',
-			projectImage:'./chat.png',
-			projectLink:'http://joshua-chat-app.herokuapp.com/',
-			projectDescription:['Real-time chat application built with React, NodeJS, and WebSockets.', 
-													'Users are promted to login with a name and a room.', 
-													'Real-time chat with anyone in the same room.'],
-			highlights: ['WebSockets','React Hooks'],
-			projectLinks:['https://github.com/JoshuaJoness/chat-app', 'https://github.com/JoshuaJoness/chat-app-server']
+			projectTitle:'Zen Chat',
+			projectImage:'./zen.png',
+			projectLink:'https://zenchaat.herokuapp.com/',
+			projectDescription:['Real-time chat application.', 
+													'Created to allow users to share positivity annonymously.', 
+													'Discuss mindfulness, yoga, health, and strength!'],
+			highlights: ['WebSockets','React Hooks','Responsive Design'],
+			projectLinks:['https://github.com/JoshuaJoness/chatapp', 'https://github.com/JoshuaJoness/chatappserver']
 		},
 		fleetTracker: {
 			projectTitle:'Fleet Tracker',
@@ -72,10 +72,12 @@ class Projects extends React.Component {
 			highlights: ['Mobile First Design','Web Design'],
 			projectLinks:['https://github.com/JoshuaJoness/pilot', 'https://github.com/JoshuaJoness/pilot-api']
 		},
-}
-	componentWillMount() {
-	console.log(window.innerWidth)
 	}
+
+	componentWillMount() {
+		console.log(window.innerWidth)
+	}
+	
 	render(){
 		return(
 			<div className='project-thumbnail-container'>
@@ -93,8 +95,8 @@ class Projects extends React.Component {
 					{/* Cards */}
 					<div className='project-card-container'>
 						<MyCard project={this.state.calorieCam}/>
-						<MyCard project={this.state.airBnb}/>
 						<MyCard project={this.state.chatApp}/>
+						<MyCard project={this.state.airBnb}/>	
 						<MyCard project={this.state.fleetTracker}/>
 						<MyCard project={this.state.strongr}/>
 						<MyCard project={this.state.pilot}/>

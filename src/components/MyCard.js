@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -9,6 +9,18 @@ import Divider from '@material-ui/core/Divider';
 import '../styles/projects.css'
 
 const MyCard = ({project}) => {
+  const [fontFamily, setFontFamily] = useState('')
+
+  useEffect(() => {
+    switch(project.projectTitle){
+      case 'Zen Chat': return setFontFamily("'Concert One', cursive");
+      case 'Airbnb Clone': return setFontFamily("'Knewave', cursive")
+      case 'Fleet Tracker': return setFontFamily("'Balsamiq Sans', cursive")
+      case 'Calorie Calulator': return setFontFamily("'Happy Monkey', cursive")
+      default: return setFontFamily("'Pacifico', cursive")
+      }
+    },[])
+
   return(
     <Card className='card'>
     {/* Image */}
@@ -37,7 +49,7 @@ const MyCard = ({project}) => {
     <center>
     <Typography gutterBottom variant="h5" component="h2">
     <a href={project.projectLink} target='_blank'>
-    <h1 style={{fontFamily:'Pacifico'}} className='project-title'>{project.projectTitle}</h1>
+    <h1 style={{fontFamily:fontFamily, color:'#F6C28B'}} className='project-title'>{project.projectTitle}</h1>
     </a>
     </Typography>
     </center>  
