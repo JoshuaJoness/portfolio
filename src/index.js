@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './components/Routes';
+import Routes from './components/Routes.tsx';
 import Cursor from './components/cursor/cursor.tsx';
 import './index.scss';
 
 ReactDOM.render(
-  <Routes>
-    <Cursor />
-  </Routes>, document.getElementById('root'),
+  <Routes />, document.getElementById('root'),
 );

@@ -5,9 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "airbnb"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -21,11 +19,10 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
-        // note you must disable the base rule as it can report incorrect errors
-        "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": ["error"],
-        "@typescript-eslint/rule-name": "error",
+    "rules" : {
+        "no-console": 0, 
+        "no-empty": 0,
+        "no-irregular-whitespace": 0,
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
-    }
+      }
 }

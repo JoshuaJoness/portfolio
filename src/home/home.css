@@ -1,0 +1,15 @@
+.home {
+  background-image: url(/templeOpaqueTwo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fefefa;
+  width: 100vw;
+  height: 100vh;
+  clip-path: circle(75%);
+  transition: clip-path 1s ease-in;
+}
+
+.home:hover {
+  clip-path: circle(0% at 50% 50%);
+}

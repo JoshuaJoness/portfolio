@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Projects from './Projects';
-import Moody from './Moody';
+import Projects from './oldFiles/Projects';
+import Moody from './oldFiles/Moody';
+import Scene from './model/onSceneReady';
 import Privacy from './Privacy';
-import Home from '../pages/home.tsx';
+import Home from '../home/home';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/privacy" component={Privacy} />
-      <Route path="/" component={Home} />
+      <Route path="/" component={Scene} />
     </Switch>
   </BrowserRouter>
 );
