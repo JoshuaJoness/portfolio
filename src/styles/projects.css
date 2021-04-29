@@ -1,5 +1,5 @@
 body {
-	background-color: #78899E;
+	background-color: #F6F5F3;
 	font-family: 'Saira Condensed', sans-serif;
 }
 /* Mobile vertical */
@@ -51,7 +51,6 @@ body {
 
 }
 .intro-container{
-	background-color: #fefefa;
 	background-image: url('/templeOpaqueTwo.png');
 	background-size: cover;
 	background-position: center center;
@@ -64,13 +63,12 @@ body {
 	width: 100vw;
 }
 .title{
-	font-size: 50px;
+	font-size: 70px;
 	font-weight: 300;
-	color: #F6C28B;
-	font-family: 'Pacifico', cursive;
+	color: #344E41;
+	font-family: 'New Tegomin', serif;
 }
 .second-container{
-	background-color: #fefefa;
 	background-image: url('/backpackOpaque.png');
 	background-position: center;
 	background-size: cover;
@@ -83,9 +81,6 @@ body {
 	width: 375px;
 	
 	border: 2px solid white;
-}
-.project-container{
-	background-color: #78899E;
 }
 .project-card-container{
 	background-color: #78899E;
