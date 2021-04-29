@@ -51,7 +51,7 @@ const Projects = () => {
 				</div>
 				<div className='second-container'></div>
 					<div className='contact-container' style={width >= 997 ? { fontSize: 30, paddingBottom: '30vh' } : {}}>
-						<h1 className='contact-title' style={{ fontSize: 70 }}>Contact</h1>
+						<h1 className='contact-title' style={{ fontSize: 70 }} id='contact'>Contact</h1>
 						<label><b style={{marginRight:'5px'}}>LinkedIn: </b><a href="https://www.linkedin.com/in/joshuajoness/" target="blank"><i class="fab fa-linkedin"></i></a></label>
 						<label><b style={{marginRight:'5px'}}>GitHub: </b><a href="https://github.com/joshuajoness" target="blank"><i class="fab fa-github-square"></i></a></label>
 						<label><b style={{marginRight:'5px'}}>Resume: </b><a href={resume} target="blank" download="joshua_jones_resume.pdf">Click here</a></label>
