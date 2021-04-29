@@ -15,3 +15,9 @@
 .siteTitle{
 	color: black;
 }
+
+@media screen and (min-width: 992px) {
+	.nav {
+		font-size: 50px;
+	}
+}

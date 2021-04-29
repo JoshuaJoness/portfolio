@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/projects.css'
 import Particles from 'react-particles-js';
 import Nav from './Nav'
@@ -10,10 +10,12 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
+import resume from './joshua_jones_resume.pdf'
+
 import MyCard from './MyCard'
 
-class Projects extends React.Component {
-	state = {
+const Projects = () => {
+	const state = {
 		calorieCam: {
 			projectTitle:'Calorie Cam',
 			projectImage:'https://www.youtube.com/embed/O4IJs9kvR9U',
@@ -62,54 +64,49 @@ class Projects extends React.Component {
 			highlights: ['Design','Video Editing','Content Creation','Social Media Marketing','Mailing List Campaign'],
 			projectLinks:['https://github.com/JoshuaJoness/calories-desktop', 'https://github.com/JoshuaJoness/calories-api']
 		},
-		pilot: {
-			projectTitle:'Pilot Pickup',
-			projectImage:'./pilot.png',
-			projectLink:'http://pilottoronto.ca/',
-			projectDescription:['This is a project that I built for a client with a mobile first design in mind', 
-													'It is just a simple booking form for now', 
-													'This project is more to showcase mobile-first design principles'],
-			highlights: ['Mobile First Design','Web Design'],
-			projectLinks:['https://github.com/JoshuaJoness/pilot', 'https://github.com/JoshuaJoness/pilot-api']
-		},
+		// pilot: {
+		// 	projectTitle:'Pilot Pickup',
+		// 	projectImage:'./pilot.png',
+		// 	projectLink:'http://pilottoronto.ca/',
+		// 	projectDescription:['This is a project that I built for a client with a mobile first design in mind', 
+		// 											'It is just a simple booking form for now', 
+		// 											'This project is more to showcase mobile-first design principles'],
+		// 	highlights: ['Mobile First Design','Web Design'],
+		// 	projectLinks:['https://github.com/JoshuaJoness/pilot', 'https://github.com/JoshuaJoness/pilot-api']
+		// },
 	}
+	const [hideNav, setHideNav] = useState(false)
+	const [width, setWidth] = useState(false)
 
-	componentWillMount() {
-		console.log(window.innerWidth)
-	}
-	
-	render(){
-		return(
+	useEffect(() => {		
+		const width = window.innerWidth;
+		setWidth(width);
+	}, [])
+
+		return (
 			<div className='project-thumbnail-container'>
-				{/* Nav */}
 				<Nav />
-				{/* first imag */}
 				<div className='intro-container' id='intro'></div>
-				{/* container for project cards */}
 				<div className='project-container' id='projects'>
 					<center>
-						<h1 className='title'>
+						<h1 className='title' style={{ fontSize: 70 }}>
 							Projects
 						</h1>
 					</center>
-					{/* Cards */}
 					<div className='project-card-container'>
-						<MyCard project={this.state.calorieCam}/>
-						<MyCard project={this.state.chatApp}/>
-						<MyCard project={this.state.airBnb}/>	
-						<MyCard project={this.state.fleetTracker}/>
-						<MyCard project={this.state.strongr}/>
-						<MyCard project={this.state.pilot}/>
+						<MyCard project={state.calorieCam}/>
+						<MyCard project={state.chatApp}/>
+						{/* <MyCard project={this.state.airBnb}/> */}
 					</div>
 				</div>
 				<div className='second-container'></div>
-					<div className='contact-container'>
-						<h1 className='contact-title'>Contact</h1>
-						<label><b style={{marginRight:'5px'}}>E-mail: </b>joshuajonesdev@gmail.com</label>
-						<label><b style={{marginRight:'5px'}}>Tel: </b>+1(647)-873-5547</label>
+					<div className='contact-container' style={width >= 997 ? { fontSize: 30, paddingBottom: '30vh' } : {}}>
+						<h1 className='contact-title' style={{ fontSize: 70 }}>Contact</h1>
 						<label><b style={{marginRight:'5px'}}>LinkedIn: </b><a href="https://www.linkedin.com/in/joshuajoness/" target="blank"><i class="fab fa-linkedin"></i></a></label>
 						<label><b style={{marginRight:'5px'}}>GitHub: </b><a href="https://github.com/joshuajoness" target="blank"><i class="fab fa-github-square"></i></a></label>
-						<label><b style={{marginRight:'5px'}}>Resume: </b><a href="https://resume.io/r/KouuKJVA7" target="blank">Click here</a></label>
+						<label><b style={{marginRight:'5px'}}>Resume: </b><a href={resume} target="blank" download="joshua_jones_resume.pdf">Click here</a></label>
+						<label><b style={{marginRight:'5px'}}>Tel: </b>+1(647)-873-5547</label>
+						<label><b style={{marginRight:'5px'}}>E-mail: </b>joshuajonesdev@gmail.com</label>
 					</div>
 {/*					<div className='appstore-container'>
 						<h1 className='contact-title'>App Store</h1>
@@ -118,6 +115,5 @@ class Projects extends React.Component {
 				</div>
 			)
 		}
-	}
 
 export default Projects

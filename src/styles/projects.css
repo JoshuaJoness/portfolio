@@ -41,15 +41,12 @@ body {
 		width: 500px;
 	}
 	.project-card-container{
-		display: grid;
-		grid-template-columns: 33% 33% 33%;
-		margin-left: 100px;
-		margin-right: 100px;
-		justify-items: center;
-		padding-bottom: 10%;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 50px;
 	}
-
 }
+
 .intro-container{
 	background-color: #fefefa;
 	background-image: url('/templeOpaqueTwo.png');
